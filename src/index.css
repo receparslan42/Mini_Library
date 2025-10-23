@@ -1,0 +1,148 @@
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.app-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.search-bar {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.category-filter {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+}
+
+.book-list-container {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.favorite-panel-container {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.book-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
+  background: #fff;
+  transition: box-shadow 0.2s ease;
+}
+
+.book-card:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.book-title {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.book-meta {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.fav-button {
+  border: 1px solid #ccc;
+  background: #f5f5f5;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.fav-button:hover {
+  background: #f0f0f0;
+}
+
+.fav-button.active {
+  background: #fff3cd;
+  border-color: #ffeeba;
+  color: #856404;
+}
+
+.favorite-panel {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1rem;
+  background: #f9f9f9;
+}
+
+.favorite-title {
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.favorite-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.favorite-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.remove-button {
+  background: #e0e0e0;
+  border: none;
+  border-radius: 4px;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.remove-button:hover {
+  background: #d5d5d5;
+}
+
+.no-results,
+.no-favorites {
+  color: #888;
+  font-size: 0.9rem;
+}
